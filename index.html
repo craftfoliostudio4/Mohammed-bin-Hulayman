@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محمد عبدالله بن حليمان | السيرة الذاتية المهنية</title>
+  
+  <!-- Google Fonts: Cairo & SF Pro fallback styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            ios: {
+              blue: '#007AFF',
+              green: '#34C759',
+              indigo: '#5856D6',
+              purple: '#AF52DE',
+              teal: '#30B0C7',
+              dark: '#0B0F17'
+            }
+          },
+          animation: {
+            'orb-slow': 'float 18s ease-in-out infinite alternate',
+            'orb-reverse': 'float-rev 22s ease-in-out infinite alternate',
+            'pulse-soft': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '50%': { transform: 'translate(60px, -40px) scale(1.1)' },
+              '100%': { transform: 'translate(-40px, 30px) scale(0.95)' },
+            },
+            'float-rev': {
+              '0%': { transform: 'translate(0px, 0px) scale(1.05)' },
+              '50%': { transform: 'translate(-50px, 50px) scale(0.9)' },
+              '100%': { transform: 'translate(40px, -30px) scale(1.15)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom iOS Glassmorphism Styles */
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #07090e;
+      color: #e2e8f0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* iOS Frosted Glass Panels */
+    .ios-glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(24px) saturate(190%);
+      -webkit-backdrop-filter: blur(24px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .ios-glass-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .ios-glass-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 22px 45px -8px rgba(0, 122, 255, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    .ios-glass-pill {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.25s ease;
+    }
+
+    .ios-glass-pill:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Specular iOS Lighting Effect */
+    .specular-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .specular-shine::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 45%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+      pointer-events: none;
+      border-radius: inherit;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 122, 255, 0.5);
+    }
+
+    /* Print optimizations */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .no-print, #ambient-orbs, nav {
+        display: none !important;
+      }
+      .ios-glass, .ios-glass-card {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        color: #0f172a !important;
+      }
+      .text-slate-300, .text-slate-400 {
+        color: #334155 !important;
+      }
+      .text-white {
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body class="selection:bg-ios-blue selection:text-white relative min-h-screen">
+
+  <!-- ========================================================
+       BACKGROUND AMBIENT ORBS (Dynamic iOS / VisionOS Lighting)
+       ======================================================== -->
+  <div id="ambient-orbs" class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <!-- Blue Glow -->
+    <div class="absolute -top-32 right-1/4 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-600/30 to-cyan-500/20 blur-[130px] animate-orb-slow"></div>
+    <!-- Purple / Indigo Glow -->
+    <div class="absolute top-1/3 -left-32 w-[550px] h-[550px] rounded-full bg-gradient-to-br from-indigo-600/25 to-purple-700/20 blur-[140px] animate-orb-reverse"></div>
+    <!-- Teal / Emerald Soft Orb -->
+    <div class="absolute bottom-1/4 right-10 w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-teal-500/20 to-blue-600/20 blur-[130px] animate-orb-slow"></div>
+    <!-- Subtlest Center Radial Grid -->
+    <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:28px_28px] opacity-70"></div>
+  </div>
+
+  <!-- Toast Notification (iOS Dynamic Island Style) -->
+  <div id="ios-toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="ios-glass px-6 py-3 rounded-full flex items-center gap-3 shadow-2xl border border-white/20">
+      <div class="w-6 h-6 rounded-full bg-ios-green/20 text-ios-green flex items-center justify-center text-xs">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <span id="toast-msg" class="text-xs font-semibold tracking-wide text-white">تم النسخ بنجاح</span>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       iOS FLOATING GLASS NAVIGATION DOCK
+       ======================================================== -->
+  <header class="fixed top-4 inset-x-0 z-40 px-4 flex justify-center no-print">
+    <nav class="ios-glass px-4 py-2.5 rounded-full flex items-center justify-between gap-4 max-w-4xl w-full border border-white/20 shadow-2xl">
+      
+      <!-- Brand / Profile Avatar -->
+      <a href="#hero" class="flex items-center gap-2.5 group pl-2">
+        <div class="w-9 h-9 rounded-2xl p-[2px] bg-gradient-to-tr from-blue-600 to-indigo-500 shadow-md group-hover:scale-105 transition-transform duration-200 overflow-hidden shrink-0">
+          <img src="الصورة الشخصية.jpg" alt="محمد بن حليمان" class="w-full h-full object-cover rounded-[14px]">
+        </div>
+        <div class="hidden sm:block">
+          <p class="text-xs font-bold text-white tracking-wide leading-tight">محمد بن حليمان</p>
+          <p class="text-[10px] text-slate-400">إدارة أعمال ومحاسبة</p>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center gap-1.5 text-xs font-medium text-slate-300">
+        <a href="#about" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition">نبذة</a>
+        <a href="#experience" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition">الخبرات</a>
+        <a href="#leadership" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition">القيادة والتطوع</a>
+        <a href="#skills" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition">المهارات والدورات</a>
+        <a href="#contact" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition">تواصل</a>
+      </div>
+
+      <!-- Quick Actions (WhatsApp & Print) -->
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" title="طباعة السيرة الذاتية أو حفظ كـ PDF" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center text-xs transition duration-200 border border-white/10">
+          <i class="fa-solid fa-print"></i>
+        </button>
+        <a href="https://wa.me/967773623443?text=مرحباً%20أخي%20محمد،%20اطلعت%20على%20سيرتك%20الذاتية%20وأود%20التواصل%20معك." target="_blank" class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg shadow-emerald-500/20 transition-all duration-200">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>محادثة واتساب</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================
+       MAIN CONTENT CONTAINER
+       ======================================================== -->
+  <main class="relative z-10 max-w-5xl mx-auto px-4 pt-28 pb-20 space-y-12">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="ios-glass specular-shine rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <!-- Background subtle Apple style glow within card -->
+      <div class="absolute -top-24 -left-24 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
+        
+        <!-- Right side (Text & Headings) -->
+        <div class="space-y-4 text-center lg:text-right flex-1">
+          <!-- Availability Pill -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            متاح للفرص الوظيفية والتحديات المهنية
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-snug">
+            محمد عبدالله محمد <br>
+            <span class="bg-gradient-to-l from-blue-400 via-sky-300 to-teal-300 bg-clip-text text-transparent">بن حليمان</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 font-medium leading-relaxed max-w-2xl">
+            خريج إدارة أعمال (دفعة 2026) | مسؤول عمليات مالية وإدارية ومبيعات إلكترونية | قائد ميداني ومبادر مجتمعي ذو سجل تنظيمي حافل.
+          </p>
+
+          <!-- iOS Widget Details -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-2 text-xs text-slate-300">
+            <span class="ios-glass-pill px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+              <i class="fa-solid fa-passport text-blue-400"></i>
+              يمني الجنسية
+            </span>
+            <span class="ios-glass-pill px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+              <i class="fa-solid fa-calendar-days text-indigo-400"></i>
+              25 سبتمبر 2000
+            </span>
+            <span class="ios-glass-pill px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+              <i class="fa-solid fa-location-dot text-rose-400"></i>
+              ساه، حضرموت، اليمن
+            </span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-4 no-print">
+            <a href="mailto:hmoo22818@icloud.com" class="px-5 py-2.5 rounded-2xl bg-white text-slate-950 font-bold text-xs sm:text-sm hover:bg-slate-200 transition shadow-lg flex items-center gap-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>مراسلتي عبر البريد</span>
+            </a>
+            <a href="tel:00967773623443" class="px-5 py-2.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm border border-white/20 transition flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">00967 773 623 443</span>
+            </a>
+            <button onclick="copyToClipboard('00967773623443', 'تم نسخ رقم الهاتف!')" class="p-2.5 rounded-2xl bg-white/5 hover:bg-white/15 text-slate-300 border border-white/10 text-xs transition" title="نسخ الرقم">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Left side: iOS Glass Widget Card -->
+        <div class="w-full sm:w-80 lg:w-72">
+          <div class="ios-glass-card rounded-3xl p-5 border border-white/20 text-center relative overflow-hidden">
+            <!-- Personal Profile Photo with Apple Glass Ring -->
+            <div class="w-28 h-28 mx-auto rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-teal-400 p-[3px] shadow-2xl shadow-blue-500/25 relative group">
+              <div class="w-full h-full rounded-[21px] overflow-hidden bg-slate-900">
+                <img src="الصورة الشخصية.jpg" alt="محمد عبدالله بن حليمان" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105">
+              </div>
+            </div>
+
+            <h3 class="text-sm font-bold text-white mt-3.5">ملف المرشح الموثق</h3>
+            <p class="text-[11px] text-slate-400 mt-0.5">جاهزية كاملة للعمل الميداني والمكتبي</p>
+
+            <div class="mt-4 pt-4 border-t border-white/10 space-y-2 text-right text-xs">
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">الجامعة:</span>
+                <span class="font-semibold text-white">العلوم والتكنولوجيا</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">التخصص:</span>
+                <span class="font-semibold text-sky-400">إدارة أعمال (BBA)</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span class="text-slate-400">التخرج:</span>
+                <span class="font-semibold text-emerald-400">دفعة 2026م</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE (الهدف المهني) -->
+    <section id="about" class="ios-glass-card rounded-3xl p-6 sm:p-8">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-lg border border-blue-500/30">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-white">الهدف المهني</h2>
+          <p class="text-xs text-slate-400">الرؤية والدافع الوظيفي</p>
+        </div>
+      </div>
+      <p class="text-sm sm:text-base text-slate-300 leading-relaxed bg-white/[0.03] p-5 rounded-2xl border border-white/10">
+        خريج إدارة أعمال من جامعة العلوم والتكنولوجيا (دفعة 2026)، أمتلك خلفية عملية في المبيعات، خدمة العملاء، وإدارة العمليات المحاسبية الإلكترونية. مدعوماً بحصيلة واسعة من الدورات التخصصية في القيادة والتخطيط الاستراتيجي وسجل قيادي وتطوعي حافل، أسعى لتوظيف مهاراتي التنظيمية والتواصلية في بيئة عمل ديناميكية للمساهمة في تحقيق أهداف المنشأة والارتقاء بالأداء المؤسسي.
+      </p>
+    </section>
+
+    <!-- EDUCATION & LANGUAGES (المؤهلات العلمية واللغات) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Education Widget (2 Cols) -->
+      <div class="md:col-span-2 ios-glass-card rounded-3xl p-6 sm:p-7 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg border border-indigo-500/30">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold text-white">المؤهلات العلمية</h2>
+            <p class="text-xs text-slate-400">التعليم الأكاديمي والشهادات</p>
+          </div>
+        </div>
+
+        <div class="space-y-3 pt-1">
+          <!-- Degree 1 -->
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start justify-between gap-4">
+            <div class="space-y-1">
+              <h3 class="text-sm sm:text-base font-bold text-white">بكالوريوس في إدارة الأعمال</h3>
+              <p class="text-xs text-slate-300 flex items-center gap-1.5">
+                <i class="fa-solid fa-building-columns text-blue-400"></i>
+                جامعة العلوم والتكنولوجيا
+              </p>
+            </div>
+            <span class="px-2.5 py-1 rounded-xl bg-blue-500/20 text-blue-300 text-xs font-semibold whitespace-nowrap border border-blue-500/30">
+              2026م
+            </span>
+          </div>
+
+          <!-- Degree 2 -->
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start justify-between gap-4">
+            <div class="space-y-1">
+              <h3 class="text-sm sm:text-base font-bold text-white">دبلوم متوسط في اللغة الإنجليزية</h3>
+              <p class="text-xs text-slate-300">برنامج مكثف لتطوير مهارات القراءة، الكتابة، والمحادثة في بيئة الأعمال</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 text-xs font-semibold whitespace-nowrap border border-emerald-500/30">
+              دبلوم معتمد
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages Widget (1 Col) -->
+      <div class="ios-glass-card rounded-3xl p-6 sm:p-7 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg border border-teal-500/30">
+            <i class="fa-solid fa-language"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold text-white">اللغات</h2>
+            <p class="text-xs text-slate-400">مستوى إتقان اللغات</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 pt-2">
+          <!-- Arabic -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1.5">
+              <span class="text-white">اللغة العربية</span>
+              <span class="text-teal-400">اللغة الأم (إتقان تام)</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
+              <div class="h-full bg-gradient-to-l from-teal-400 to-blue-500 rounded-full w-full"></div>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1.5">
+              <span class="text-white">اللغة الإنجليزية</span>
+              <span class="text-blue-400">مستوى متقدم (Advanced)</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
+              <div class="h-full bg-gradient-to-l from-blue-500 to-indigo-500 rounded-full w-4/5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WORK EXPERIENCE (الخبرات المهنية) -->
+    <section id="experience" class="ios-glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg border border-sky-500/30">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-white">الخبرات المهنية</h2>
+            <p class="text-xs text-slate-400">المسار الوظيفي والمسؤوليات المنجزة</p>
+          </div>
+        </div>
+        <span class="text-xs text-slate-400 hidden sm:block">سجل عملي تطبيقي</span>
+      </div>
+
+      <div class="space-y-5">
+        
+        <!-- Experience Item 1 -->
+        <div class="p-5 sm:p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-blue-400/30 transition-all duration-300">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3 mb-3">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                <span>مسؤول حسابات إلكترونية ومبيعات</span>
+              </h3>
+              <p class="text-xs text-blue-400 font-medium">محلات كينج بايسكل (King Bicycle)</p>
+            </div>
+            <span class="inline-flex self-start sm:self-center px-3 py-1 rounded-xl bg-blue-500/10 text-blue-300 text-xs font-semibold border border-blue-500/20">
+              إدارة مالية ومبيعات
+            </span>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 list-inside">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-blue-400 mt-1 text-xs shrink-0"></i>
+              <span>إدارة وتدقيق العمليات المالية والقيود المحاسبية عبر البرامج والأنظمة الإلكترونية بدقة عالية ومتابعة التقارير اليومية والدورية.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-blue-400 mt-1 text-xs shrink-0"></i>
+              <span>قيادة وتنسيق عمليات البيع المباشر، تقديم تجربة عملاء استثنائية، وبناء علاقات متينة ساهمت في تحقيق مستهدفات البيع وزيادة رضا الزبائن.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="p-5 sm:p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-indigo-400/30 transition-all duration-300">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3 mb-3">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                <span>موظف استقبال وخدمات نزلاء</span>
+              </h3>
+              <p class="text-xs text-indigo-400 font-medium">فندق نستو</p>
+            </div>
+            <span class="inline-flex self-start sm:self-center px-3 py-1 rounded-xl bg-indigo-500/10 text-indigo-300 text-xs font-semibold border border-indigo-500/20">
+              ضيافة وإدارة علاقات
+            </span>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-400 mt-1 text-xs shrink-0"></i>
+              <span>استقبال النزلاء وإتمام إجراءات الدخول والمغادرة (Check-in / Check-out) بكفاءة عالية واحترافية وفق أعلى المعايير الفندقية.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-400 mt-1 text-xs shrink-0"></i>
+              <span>متابعة كافة طلبات النزلاء، والرد على الاستفسارات الهاتفية والمباشرة، وتقديم الدعم الفوري لضمان أعلى معايير الجودة والرضا.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-400 mt-1 text-xs shrink-0"></i>
+              <span>التنسيق الفعال والمستمر مع الأقسام الفندقية المختلفة (الإشراف الداخلي، الصيانة، الحسابات) لضمان انسيابية العمل والتعامل الفوري مع أي متطلبات طارئة.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & VOLUNTEERING (الأدوار القيادية والتنظيمية والمجتمعية) -->
+    <section id="leadership" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- Leadership Roles Widget -->
+      <div class="ios-glass-card rounded-3xl p-6 sm:p-7 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg border border-amber-500/30">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold text-white">الأدوار القيادية والتنظيمية</h2>
+            <p class="text-xs text-slate-400">إدارة الفرق والفعاليات الجامعية</p>
+          </div>
+        </div>
+
+        <div class="space-y-3 pt-2">
+          <!-- Hadramout Foundation Role -->
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+                <i class="fa-solid fa-landmark text-amber-400 text-xs"></i>
+                مركز أحمد للطالب الجامعي (مؤسسة حضرموت)
+              </h3>
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-300 pr-2">
+              <p>• <strong class="text-white">المسؤول اللوجستي لحفلات التخرج:</strong> إدارة التجهيزات، الإشراف على المستلزمات والتنسيق الشامل لتنظيم الفعاليات الكبرى.</p>
+              <p>• <strong class="text-white">المسؤول الرياضي:</strong> تنسيق الأنشطة والبطولات وإدارة المنافسات الطلابية بنجاح.</p>
+            </div>
+          </div>
+
+          <!-- University Roles -->
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2">
+            <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
+              <i class="fa-solid fa-graduation-cap text-sky-400 text-xs"></i>
+              جامعة العلوم والتكنولوجيا
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300 pt-1">
+              <div class="ios-glass-pill p-2.5 rounded-xl">
+                <span class="text-white font-medium block">نائب رئيس</span>
+                <span class="text-slate-400 text-[11px]">نادي السلام البيئي</span>
+              </div>
+              <div class="ios-glass-pill p-2.5 rounded-xl">
+                <span class="text-white font-medium block">المسؤول المالي</span>
+                <span class="text-slate-400 text-[11px]">نادي الأمل التطوعي</span>
+              </div>
+              <div class="ios-glass-pill p-2.5 rounded-xl">
+                <span class="text-white font-medium block">المسؤول الرياضي</span>
+                <span class="text-slate-400 text-[11px]">الأنشطة والمسابقات</span>
+              </div>
+              <div class="ios-glass-pill p-2.5 rounded-xl">
+                <span class="text-white font-medium block">عضو إداري</span>
+                <span class="text-slate-400 text-[11px]">النادي التنظيمي</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voluntary & Community Work -->
+      <div class="ios-glass-card rounded-3xl p-6 sm:p-7 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-lg border border-rose-500/30">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold text-white">العمل التطوعي والمبادرات</h2>
+            <p class="text-xs text-slate-400">المسؤولية الاجتماعية والتكافل</p>
+          </div>
+        </div>
+
+        <div class="space-y-2.5 pt-2">
+          <!-- Head of Multaqa -->
+          <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xs">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-bold text-white">رئيس ملتقى شباب الصديق التطوعي</span>
+            </div>
+            <span class="text-[11px] text-rose-300 font-medium">قيادة وإشراف</span>
+          </div>
+
+          <!-- Sah Multaqa -->
+          <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xs">
+                <i class="fa-solid fa-hands-holding-child"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-bold text-white">عضو ملتقى شباب ساه الخيري</span>
+            </div>
+            <span class="text-[11px] text-blue-300 font-medium">عضوية فاعلة</span>
+          </div>
+
+          <!-- Shabab Feena Khair -->
+          <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xs">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-bold text-white">عضو فريق "شباب فينا خير"</span>
+            </div>
+            <span class="text-[11px] text-emerald-300 font-medium">ميداني</span>
+          </div>
+
+          <!-- Bayadir -->
+          <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xs">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-bold text-white">عضو سابق في ملتقى بيادر التطوعي</span>
+            </div>
+            <span class="text-[11px] text-purple-300 font-medium">سجل تطوعي</span>
+          </div>
+
+          <!-- Community Impact Note -->
+          <div class="p-3 rounded-2xl bg-gradient-to-r from-rose-500/10 to-indigo-500/10 border border-white/10 text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+            <i class="fa-solid fa-sparkles text-amber-400 ml-1"></i>
+            قيادة وتنفيذ عدة مبادرات تطوعية وخدمية ميدانية لتعزيز التكافل الاجتماعي والتنمية المجتمعية في مديرية ساه والمناطق المجاورة.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- COURSES & CERTIFICATES (الدورات التدريبية والشهادات المهنية) -->
+    <section class="ios-glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg border border-purple-500/30">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-white">الدورات التدريبية والشهادات المهنية</h2>
+          <p class="text-xs text-slate-400">تطوير مستمر للمهارات الإدارية والتقنية والقيادية</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        
+        <!-- ICDL -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs font-bold">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">الرخصة الدولية ICDL</h4>
+            <p class="text-[10px] text-slate-400">قيادة الحاسب الآلي المعتمدة</p>
+          </div>
+        </div>
+
+        <!-- Total Quality Management -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-check-double"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">إدارة الجودة الشاملة</h4>
+            <p class="text-[10px] text-slate-400">معايير التحسين المستمر</p>
+          </div>
+        </div>
+
+        <!-- Strategic Planning -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-chess"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">التخطيط الإستراتيجي</h4>
+            <p class="text-[10px] text-slate-400">بناء الأهداف والخطط التشغيلية</p>
+          </div>
+        </div>
+
+        <!-- Entrepreneurship -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">الريادة وإدارة المشروعات</h4>
+            <p class="text-[10px] text-slate-400">المشاريع الصغيرة ودراسات الجدوى</p>
+          </div>
+        </div>
+
+        <!-- Service Facilities -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-hotel"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">إدارة المنشآت الخدمية</h4>
+            <p class="text-[10px] text-slate-400">الضيافة والخدمات العامة</p>
+          </div>
+        </div>
+
+        <!-- Leadership Skills -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">تنمية المهارات القيادية</h4>
+            <p class="text-[10px] text-slate-400">إدارة فرق العمل والتأثير</p>
+          </div>
+        </div>
+
+        <!-- Crisis Management -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">إدارة النزاعات والأزمات</h4>
+            <p class="text-[10px] text-slate-400">التعامل مع المخاطر الطارئة</p>
+          </div>
+        </div>
+
+        <!-- Risk & Insurance -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">إدارة الخطر والتأمين</h4>
+            <p class="text-[10px] text-slate-400">تقييم المخاطر التشغيلية</p>
+          </div>
+        </div>
+
+        <!-- Critical Thinking -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">مهارات التفكير الناقد</h4>
+            <p class="text-[10px] text-slate-400">التحليل واتخاذ القرار المنطقي</p>
+          </div>
+        </div>
+
+        <!-- Effective Communication -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-violet-500/20 text-violet-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">الاتصال والتواصل الفعال</h4>
+            <p class="text-[10px] text-slate-400">الإقناع والتعامل مع الجمهور</p>
+          </div>
+        </div>
+
+        <!-- First Aid -->
+        <div class="ios-glass-pill p-3.5 rounded-2xl flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">الإسعافات الأولية</h4>
+            <p class="text-[10px] text-slate-400">الاستجابة والسلامة الميدانية</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE SKILLS (المهارات الشخصية والتقنية) -->
+    <section id="skills" class="ios-glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg border border-cyan-500/30">
+          <i class="fa-solid fa-sliders"></i>
+        </div>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-white">المهارات الشخصية والتقنية</h2>
+          <p class="text-xs text-slate-400">القدرات التنفيذية والتحليلية</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm shrink-0">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-0.5">الأنظمة المالية والمحاسبية</h3>
+            <p class="text-xs text-slate-300">إدارة الحسابات الإلكترونية، تدقيق القيود المالية، وإعداد التقارير المحاسبية الدورية بدقة عالية.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-sm shrink-0">
+            <i class="fa-solid fa-boxes-packing"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-0.5">التنسيق والإشراف اللوجستي</h3>
+            <p class="text-xs text-slate-300">إدارة المستلزمات، تجهيز الفعاليات وحفلات التخرج، وضمان سلاسة العمليات الميدانية.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm shrink-0">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-0.5">القيادة والعمل الجماعي</h3>
+            <p class="text-xs text-slate-300">مهارات قيادية عالية والقدرة على توجيه وتحفيز فرق العمل لتحقيق الأهداف المشتركة بروح الفريق.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm shrink-0">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-0.5">التفاوض والإقناع وخدمة العملاء</h3>
+            <p class="text-xs text-slate-300">بناء علاقات إيجابية وطويلة الأمد مع العملاء، الاستماع لاحتياجاتهم وتقديم الحلول الفعالة.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex items-start gap-3.5 md:col-span-2">
+          <div class="w-9 h-9 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-sm shrink-0">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white mb-0.5">حل المشكلات وإدارة الأولويات وضغوط العمل</h3>
+            <p class="text-xs text-slate-300">التعامل مع المتغيرات اليومية بسرعة بديهة، اتخاذ القرارات السليمة، والالتزام الصارم بالمواعيد النهائية ومؤشرات الإنجاز.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="contact" class="ios-glass specular-shine rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <!-- Ambient light effect -->
+      <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 text-center max-w-2xl mx-auto space-y-6">
+        
+        <div class="w-14 h-14 mx-auto rounded-3xl bg-gradient-to-tr from-blue-600 to-teal-400 flex items-center justify-center text-white text-2xl shadow-xl shadow-blue-500/20">
+          <i class="fa-regular fa-paper-plane"></i>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">دعنا نبدأ التعاون والعمل معاً</h2>
+          <p class="text-xs sm:text-sm text-slate-300">
+            يسعدني استقبال استفساراتكم وعروض العمل ومناقشة الفرص الوظيفية في مجالات الإدارة، العمليات، والمبيعات.
+          </p>
+        </div>
+
+        <!-- Contact Links Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-right">
+          
+          <!-- WhatsApp Contact Button -->
+          <a href="https://wa.me/967773623443?text=مرحباً%20محمد،%20نود%20التواصل%20معك%20بخصوص%20فرصة%20عمل." target="_blank" class="p-4 rounded-2xl bg-white/[0.05] hover:bg-emerald-500/10 border border-white/10 hover:border-emerald-500/30 transition duration-200 flex items-center justify-between group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">واتساب / اتصال</p>
+                <p class="text-sm font-bold text-white" dir="ltr">+967 773 623 443</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-left text-xs text-slate-500 group-hover:text-emerald-400 group-hover:-translate-x-1 transition-all"></i>
+          </a>
+
+          <!-- Email Contact Button -->
+          <a href="mailto:hmoo22818@icloud.com" class="p-4 rounded-2xl bg-white/[0.05] hover:bg-blue-500/10 border border-white/10 hover:border-blue-500/30 transition duration-200 flex items-center justify-between group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs text-slate-400">البريد الإلكتروني</p>
+                <p class="text-xs sm:text-sm font-bold text-white truncate" dir="ltr">hmoo22818@icloud.com</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-left text-xs text-slate-500 group-hover:text-blue-400 group-hover:-translate-x-1 transition-all"></i>
+          </a>
+
+        </div>
+
+        <!-- Quick Copy Buttons Bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-2 text-xs no-print">
+          <button onclick="copyToClipboard('00967773623443', 'تم نسخ رقم الجوال!')" class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-slate-300 border border-white/10 transition flex items-center gap-1.5">
+            <i class="fa-regular fa-copy text-[11px]"></i>
+            <span>نسخ رقم الجوال</span>
+          </button>
+          <button onclick="copyToClipboard('hmoo22818@icloud.com', 'تم نسخ البريد الإلكتروني!')" class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-slate-300 border border-white/10 transition flex items-center gap-1.5">
+            <i class="fa-regular fa-copy text-[11px]"></i>
+            <span>نسخ البريد الإلكتروني</span>
+          </button>
+        </div>
+
+        <!-- Minimal Footer -->
+        <div class="pt-8 border-t border-white/10 flex items-center justify-center text-center text-xs text-slate-400">
+          <p>© 2026 محمد عبدالله بن حليمان. جميع الحقوق محفوظة.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       JAVASCRIPT INTERACTIONS
+       ======================================================== -->
+  <script>
+    // Copy to clipboard with fallback for iframe environments
+    function copyToClipboard(text, successMessage) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMessage || 'تم النسخ بنجاح');
+        }).catch(() => {
+          fallbackCopyText(text, successMessage);
+        });
+      } else {
+        fallbackCopyText(text, successMessage);
+      }
+    }
+
+    function fallbackCopyText(text, successMessage) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMessage || 'تم النسخ بنجاح');
+      } catch (err) {
+        showToast('تعذر النسخ التلقائي');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // iOS Dynamic Toast Notification
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('ios-toast');
+      const toastMsg = document.getElementById('toast-msg');
+      if (!toast || !toastMsg) return;
+
+      toastMsg.textContent = message;
+      toast.classList.remove('-translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('-translate-y-24', 'opacity-0');
+      }, 2500);
+    }
+
+    // Interactive mouse move subtle specular lighting on desktop
+    document.addEventListener('mousemove', (e) => {
+      const cards = document.querySelectorAll('.ios-glass-card');
+      const x = e.clientX;
+      const y = e.clientY;
+
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        // Check if cursor is near card
+        if (
+          x >= rect.left - 40 &&
+          x <= rect.right + 40 &&
+          y >= rect.top - 40 &&
+          y <= rect.bottom + 40
+        ) {
+          const relativeX = x - rect.left;
+          const relativeY = y - rect.top;
+          card.style.background = `radial-gradient(400px circle at ${relativeX}px ${relativeY}px, rgba(255,255,255,0.09), rgba(255,255,255,0.02) 60%)`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
